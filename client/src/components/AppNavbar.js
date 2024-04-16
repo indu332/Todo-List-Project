@@ -10,7 +10,7 @@ function AppNavbar({logged=false}) {
     <>
       <Navbar sticky='top' bg="primary" variant="dark">
         <Container>
-          <Navbar.Brand ><img className='rounded m-1' style={{width:"35px"}} src="https://i.ibb.co/71qVBwJ/td2.jpg" /><span className="ms-1 fs-4">TaskNexa</span></Navbar.Brand>
+          <Navbar.Brand ><img className='rounded m-1' style={{width:"35px"}} src="https://i.ibb.co/71qVBwJ/td2.jpg" /><span className="ms-1 fs-4">TaskTaker</span></Navbar.Brand>
           {!logged ? <Nav>
             <Link style={{textDecoration:"none"}} to="/"><span className='fs-lg-5 me-3' style={{color:"white"}}>Home</span></Link>
             <Link style={{textDecoration:"none"}} to="/signup"><span className='fs-lg-5 me-3' style={{color:"white"}}>Sign Up</span></Link>
