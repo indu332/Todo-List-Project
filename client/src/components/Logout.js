@@ -14,7 +14,6 @@ function Logout() {
         Authorization : token,
       }
     }).then(res => {
-      console.log(res);
       localStorage.removeItem('token');
     }).catch(err => {
       console.log(err);

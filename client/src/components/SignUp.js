@@ -35,7 +35,6 @@ function SignUp() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("hello")
     axios.post(`${URL}/signup`,{username,email,password}).then(user => {
       // console.log(user)
       setUsername('');
@@ -43,6 +42,7 @@ function SignUp() {
       setPassword('');
       navigate('/signin')
     }).catch(err => {
+      console.log(err)
       setToast(true)
       // console.log(err)
     })

@@ -37,7 +37,6 @@ export default function Todos() {
       setTime('');
       setDate('')
       // console.log(res);
-      console.log(email)
       setTodos([...todos,{username,todoData,time}])
       displayData();
     }).catch(err => {
@@ -110,7 +109,6 @@ export default function Todos() {
       setUsername(res.data.user.username);
       setEmail(res.data.user.email);
       setUserid(res.data.user.id);
-      console.log(res.data.user)
       axios.post(`${URL}/todos`,{username:res.data.user.username}).then(res => {
         setTodos([...res.data.todos])
         // console.log([...res.data.todos]);
