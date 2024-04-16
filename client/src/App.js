@@ -85,7 +85,7 @@ function App() {
         </div>
       </Row>
       <Row>
-        <div className='container text-center ' >© 2024 TaskNexa project. All rights reserved</div>
+        <div className='container text-center ' >© 2024 TaskTaker project. All rights reserved</div>
       </Row>
     </Container>
   
